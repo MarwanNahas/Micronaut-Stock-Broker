@@ -1,0 +1,3 @@
+***In this section we will build a Stock Broker Rest Api to see how the micronaut web features can we used***
+We will be using Gradle not Maven
+We will put Netty Server in the Features

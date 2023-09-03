@@ -1,3 +1,6 @@
 ***In this section we will build a Stock Broker Rest Api to see how the micronaut web features can we used***
 We will be using Gradle not Maven
 We will put Netty Server in the Features
+
+**First : we will add Stock Symbols Rest API , we will create an In-Memory Store , generate some test data and we will call the rest API endpoint with the HTTP client && Testing What we Did
+**Second: Get by value

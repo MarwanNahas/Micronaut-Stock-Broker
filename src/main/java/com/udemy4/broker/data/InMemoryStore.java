@@ -29,9 +29,16 @@ public class InMemoryStore {
     public void initialize(){
         //we gonna fill up the symbols inside the Hash map using an Intstream from zero to 10 
         //IntStream.range basically works as a for loop then for each is the logic inside the for loop
-        IntStream.range(0, 10).forEach(i ->
-        addNewSymbol());
+        //3shan lw zawedt fel mosta2bal maybawazleesh 7aga fel testing ha3mel function tanya initializeWith w heya deh ely ha7ot feeha el  logic bs fo2eeh ha7ot eno ye clear el map 
+       initializeWith(10);
     }
+
+    public void initializeWith(int numberOfEntries){
+        symbols.clear();
+        IntStream.range(0, numberOfEntries).forEach(i ->
+            addNewSymbol());
+    }
+
     private void addNewSymbol(){
         //we gonna get the fake data from a package from git hub called java-faker we gonna add its deppendency in the pom.xml file 
         //the faker function willl now provide us with four random stock symbol from the nsdq stock exchange
@@ -44,6 +51,11 @@ public class InMemoryStore {
     //to get the HashMap and everything in it
     public Map<String, Symbol> getSymbols() {
         return symbols;
+    }
+
+    //get Symbol by Value 
+    public Symbol getSymbolByValue(String value){
+        return symbols.get(value);
     }
 
     
